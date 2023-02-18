@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "53512b13-21dd-4159-9222-2b4c3a54a200",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16001056"
+	},
+	"item": [
+		{
+			"name": "getAllUserData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getAllUserData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getAllUserData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTaskData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getAllTaskData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getAllTaskData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"prathmeshkulkarni@gmail.com\",\n    \"name\":\"Prathmesh Kulkarni\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"Task\":\"Sample Task 2\",\n\"Expiry_date\":\"2023-02-18T08:53:50.621Z\",\n\"User\":[\"63f0921e2304d21af37e8fc6\",\"63f090e5349598ef0e07b170\"],\n\"Important\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createTask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
